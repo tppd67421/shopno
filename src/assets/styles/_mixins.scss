@@ -1,0 +1,32 @@
+@import '~@/assets/styles/variables';
+
+// screens
+@mixin mobile-tiny() {
+    @media (max-width: $screen-mobile-tiny) {
+        @content;
+    }
+}
+
+@mixin tablet() {
+    @media (max-width: $screen-tablet) {
+        @content;
+    }
+}
+
+@mixin laptop() {
+    @media (max-width: $screen-laptop) {
+        @content;
+    }
+}
+
+@mixin laptop-large() {
+    @media (max-width: $screen-laptop-large) {
+        @content;
+    }
+}
+
+@mixin desktop() {
+    @media (max-width: $screen-desktop) {
+        @content;
+    }
+}
