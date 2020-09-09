@@ -41,14 +41,12 @@
                 letter-spacing: 0.8px;
                 line-height: 28px;
             }
-            &__title + .section-text__paragraph {
-                margin: 0 !important;
-            }
             &__paragraph ~ .section-text__paragraph {
                 margin-top: 28px !important;
+            }
+            &__title + .section-text__paragraph {
+                margin: 0 !important;
             }
         }
     }
 }
-
-
