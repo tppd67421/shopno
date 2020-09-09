@@ -1,0 +1,54 @@
+.about-us {
+    text-align: center;
+    padding-top: 122px;
+    padding-bottom: 166px;
+    background-color: $about-us-background;
+    &__title {
+        @include title;
+    }
+    &__subtitle {
+        @include subtitle($font-size: 18px, $margin-bottom: 144px);
+    }
+    .content {
+        display: flex;
+        justify-content: center;
+        text-align: left;
+        &__image {
+            box-shadow: $about-us-shadow;
+            margin-right: 110px;
+        }
+        .section-text {
+            transform: translateX(46px);
+            &__title {
+                font-family: $subtitle-font;
+                font-weight: 700;
+                font-size: 20px;
+                text-transform: uppercase;
+                opacity: 0.75;
+                margin-bottom: 21px;
+                letter-spacing: 1.4px;
+                &:nth-child(n + 2) {
+                    margin-top: 30px;
+                    font-size: 17px;
+                    letter-spacing: 1.2px;
+                    margin-bottom: 18px;
+                }
+            }
+            &__paragraph {
+                font-family: $paragraph-font;
+                font-size: 16px;
+                width: 480px;
+                letter-spacing: 0.8px;
+                line-height: 28px;
+            }
+            &__title + .section-text__paragraph {
+                margin: 0 !important;
+            }
+            &__paragraph ~ .section-text__paragraph {
+                margin-top: 28px !important;
+            }
+        }
+    }
+}
+
+

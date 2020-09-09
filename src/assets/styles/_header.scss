@@ -49,10 +49,14 @@
         font-size: 18px;
         color: rgba($dark-color, 0.75);
         cursor: pointer;
+        transition: 200ms;
+        &:hover {
+            color: rgba($light-color, 0.8);
+            background-color: rgba($dark-color, 0.6);
+            border: 2px solid transparent;
+        }
     }
     &__cup-image {
-        background: url('./../images/header-cup.jpg') no-repeat;
-        background-size: cover;
         margin-left: 890px;
         width: 76px;
         height: 86px;

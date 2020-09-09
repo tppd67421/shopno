@@ -1,0 +1,21 @@
+.featured {
+    padding-top: 120px;
+    text-align: center;
+    &__title {
+        @include title;
+    }
+    &__subtitle {
+        @include subtitle($font-size: 17px, $margin-bottom: 111px);
+    }
+    .works {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 1400px;
+        margin: 0 auto;
+        &__item {
+            margin: 7px;
+            cursor: pointer;
+        }
+    }
+}

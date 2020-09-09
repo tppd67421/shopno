@@ -1,0 +1,18 @@
+.works__item_full-size {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.Msg-window-default {
+    border-radius: 5px;
+}
+.Msg-window-inner-x-default {
+    transition: 200ms;
+    &:hover {
+        background-color: transparent !important;
+        opacity: 0.7;
+    }
+}
+.Msg-content-container-default {
+    display: flex;
+}
