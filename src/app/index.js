@@ -6,7 +6,7 @@ window.msg = msg
 
 console.log(msg)
 
-const getFullImagePath = (number) => `work-${number}-full.jpg`
+const getFullImagePath = (number) => `featured/work-${number}-full.jpg`
 
 document.querySelectorAll('.works__item').forEach((item, counter) => {
     item.addEventListener('click', () => {

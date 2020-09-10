@@ -3,21 +3,36 @@ $dark-color: #000000;
 $light-color: #ffffff;
 $main-title-color: #505050;
 $logo-letter-color: #77efe5;
+$team-popup-title-color: #272727;
+$team-popup-title-italic-color: #767070;
+$footer-icon-color: #faf4f4;
 
 // elements colors
 $logo-border-color: #170f1c;
+
+// background colors
 $main-title-word-background: #b2f2ee;
 $header-background: #eff0f2;
 $about-us-background: #f8fafa;
+$team-background: #f9fbfb;
+$team-popup-background: #6df6eb;
+$submit-button-background: #6eeee4;
+$contact-blocks-background: rgba(#021623, 0.71);
+$footer-background: #262b2e;
+$footer-icon-background-active: #71f6eb;
 
 // shadow
 $main-title-shadow: 0px 9px 10px rgba(0, 0, 0, 0.24);
 $about-us-shadow: 0px 0px 30px 0px rgba(20, 20, 21, 0.13);
+$team-popup-shadow: 0px 7px 16px 0px rgba(20, 20, 21, 0.18);
 
 // fonts
 $title-font: 'Montserrat', sans-serif;
 $subtitle-font: 'Merriweather', serif;
 $paragraph-font: 'Raleway', sans-serif;
+
+// any
+$transition-duration: 200ms;
 
 // screens
 $screen-mobile-tiny: 375px;

@@ -51,6 +51,7 @@
     "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0",
     "msg-modal": "^11.4.8"
   }
 }

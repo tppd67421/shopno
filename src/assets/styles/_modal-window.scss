@@ -7,7 +7,7 @@
     border-radius: 5px;
 }
 .Msg-window-inner-x-default {
-    transition: 200ms;
+    transition: $transition-duration;
     &:hover {
         background-color: transparent !important;
         opacity: 0.7;

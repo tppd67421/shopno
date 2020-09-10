@@ -1,0 +1,96 @@
+.contacts {
+    padding-top: 130px;
+    padding-bottom: 122px;
+    background: url(../images/bg-contacts.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    .form,
+    .address {
+        background-color: $contact-blocks-background;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 13px;
+    }
+    .form {
+        margin-left: 13px;
+        padding: {
+            top: 29px;
+            bottom: 30px;
+            left: 32px;
+            right: 34px;
+        }
+        &__input {
+            width: 544px;
+            border-bottom: 1px solid rgba($light-color, 0.3);
+            font-family: $paragraph-font;
+            font-size: 15px;
+            color: rgba($light-color, 0.4);
+            padding: 15px 2px;
+            resize: none;
+            margin-bottom: 11px;
+            &_textarea {
+                height: 92px;
+                margin-bottom: 39px;
+            }
+            &::placeholder {
+                color: rgba($light-color, 0.4);
+            }
+        }
+        &__button {
+            background-color: $submit-button-background;
+            cursor: pointer;
+            padding: 15px 36px;
+            letter-spacing: 2px;
+            font-family: $title-font;
+            font-size: 18px;
+            color: rgba($dark-color, 0.7);
+            text-transform: uppercase;
+            transition: $transition-duration;
+            &:hover {
+                background: $light-color;
+            }
+        }
+    }
+    .address {
+        padding: {
+            top: 33px;
+            bottom: 20px;
+            left: 24px;
+            right: 24px;
+        }
+        &__address-line,
+        &__phone,
+        &__fax,
+        &__web,
+        &__email {
+            margin-left: 6px;
+            margin-bottom: 6px;
+            font-family: $paragraph-font;
+            font-size: 15px;
+            color: rgba($light-color, 0.4);
+            a {
+                color: rgba($light-color, 0.4);
+                transition: $transition-duration;
+                &:hover {
+                    color: rgba($light-color, 0.8);
+                }
+            }
+        }
+        &__address-line {
+            font-family: $paragraph-font;
+            font-size: 15px;
+            transition: $transition-duration;
+            &:hover {
+                color: rgba($light-color, 0.8);
+            }
+        }
+        &__fax {
+            margin-bottom: 31px;
+        }
+        &__email {
+            margin-bottom: 25px;
+        }
+    }
+}

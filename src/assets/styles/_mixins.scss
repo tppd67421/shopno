@@ -1,4 +1,4 @@
-@mixin title {
+@mixin title() {
     text-transform: uppercase;
     font-family: $title-font;
     font-size: 36px;
@@ -7,13 +7,27 @@
     opacity: 0.9;
 }
 
-@mixin subtitle ($font-size, $margin-bottom) {
+@mixin subtitle($font-size, $margin-bottom) {
     font-family: $subtitle-font;
     text-transform: uppercase;
     font-size: $font-size;
     letter-spacing: 1.1px;
     opacity: 0.62;
     margin-bottom: $margin-bottom;
+}
+
+@mixin gallery($cursor-pointer) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1200px;
+    margin: 0 auto;
+    &__item {
+        margin: 7px;
+        @if $cursor-pointer {
+            cursor: pointer;
+        }
+    }
 }
 
 // screens
