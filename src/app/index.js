@@ -2,9 +2,6 @@ import Msg from 'msg-modal'
 import '@/assets/styles/main.scss'
 
 const msg = Msg.factory()
-window.msg = msg
-
-console.log(msg)
 
 const getFullImagePath = (number) => `featured/work-${number}-full.jpg`
 
