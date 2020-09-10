@@ -9,9 +9,10 @@
         display: flex;
         align-self: flex-start;
         padding: 64px 0;
+        width: 1142px;
+        margin: 0 auto;
     }
     &__logo {
-        margin: 0 189px;
         padding: 4px 8px;
         border: 6.5px solid $logo-border-color;
         text-transform: uppercase;
