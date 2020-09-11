@@ -3,15 +3,11 @@
     padding-bottom: 122px;
     background: url(../images/bg-contacts.jpg) no-repeat;
     background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
-    .form,
-    .address {
-        background-color: $contact-blocks-background;
-        display: flex;
+    @include laptop() {
         flex-direction: column;
-        align-items: flex-start;
-        margin: 0 13px;
     }
     .form {
         margin-left: 13px;
@@ -20,6 +16,9 @@
             bottom: 30px;
             left: 32px;
             right: 34px;
+        }
+        @include laptop-large() {
+            padding: 15px 30px;
         }
         &__input {
             width: 544px;
@@ -30,6 +29,16 @@
             padding: 15px 2px;
             resize: none;
             margin-bottom: 11px;
+            @include laptop-large() {
+                width: 400px;
+            }
+            @include laptop() {
+                width: 90%;
+                margin: {
+                    left: auto;
+                    right: auto;
+                }
+            }
             &_textarea {
                 height: 92px;
                 margin-bottom: 39px;
@@ -50,6 +59,9 @@
             transition: $transition-duration;
             &:hover {
                 background: $light-color;
+            }
+            @include laptop() {
+                margin: auto;
             }
         }
     }
@@ -91,6 +103,31 @@
         }
         &__email {
             margin-bottom: 25px;
+        }
+        &__map {
+            width: 453px;
+            height: 223px;
+            @include laptop-large() {
+                width: 380px;
+                height: 190px;
+            }
+            @include laptop() {
+                width: 100%;
+                height: 300px;
+            }
+        }
+    }
+    .form,
+    .address {
+        background-color: $contact-blocks-background;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 13px;
+        @include laptop() {
+            margin: 20px auto;
+            width: 70%;
+            padding: 40px 20px;
         }
     }
 }

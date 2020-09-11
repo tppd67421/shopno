@@ -3,6 +3,9 @@
     padding-top: 122px;
     padding-bottom: 166px;
     background-color: $about-us-background;
+    @include tablet() {
+        padding: 90px 0;
+    }
     &__title {
         @include title;
     }
@@ -16,9 +19,20 @@
         &__image {
             box-shadow: $about-us-shadow;
             margin-right: 110px;
+            @include laptop-large() {
+                width: 300px;
+                object-fit: cover;
+                margin-right: 50px;
+            }
+            @include laptop() {
+                display: none;
+            }
         }
         .section-text {
             transform: translateX(46px);
+            @include laptop() {
+                transform: translate(0);
+            }
             &__title {
                 font-family: $subtitle-font;
                 font-weight: 700;
@@ -27,11 +41,27 @@
                 opacity: 0.75;
                 margin-bottom: 21px;
                 letter-spacing: 1.4px;
+                @include laptop-large() {
+                    font-size: 18px;
+                }
+                @include tablet() {
+                    width: 90%;
+                    margin: {
+                        left: auto;
+                        right: auto;
+                    }
+                }
+                @include mobile-tiny() {
+                    font-size: 15px;
+                }
                 &:nth-child(n + 2) {
                     margin-top: 30px;
                     font-size: 17px;
                     letter-spacing: 1.2px;
                     margin-bottom: 18px;
+                    @include laptop-large() {
+                        font-size: 15px;
+                    }
                 }
             }
             &__paragraph {
@@ -40,12 +70,27 @@
                 width: 480px;
                 letter-spacing: 0.8px;
                 line-height: 28px;
+                @include laptop-large() {
+                    font-size: 14px;
+                }
+                @include tablet() {
+                    width: 90%;
+                    margin: {
+                        left: auto;
+                        right: auto;
+                    }
+                }
+                @include mobile-tiny() {
+                    font-size: 13px;
+                    line-height: 20px;
+                }
             }
             &__paragraph ~ .section-text__paragraph {
                 margin-top: 28px !important;
             }
             &__title + .section-text__paragraph {
-                margin: 0 !important;
+                margin-bottom: 0 !important;
+                margin-top: 0 !important;
             }
         }
     }

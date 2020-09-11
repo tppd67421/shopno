@@ -2,6 +2,9 @@
     padding-top: 120px;
     padding-bottom: 117px;
     text-align: center;
+    @include tablet() {
+        padding: 90px 0;
+    }
     &__title {
         @include title;
     }
@@ -11,5 +14,17 @@
     .works {
         @include gallery($cursor-pointer: true);
         font-size: 0;
+        @include laptop-large() {
+            width: 90%;
+            margin: 0 5%;
+            &__item {
+                flex-basis: 30%;
+            }
+        }
+        @include tablet() {
+            &__item {
+                margin: 2px;
+            }
+        }
     }
 }

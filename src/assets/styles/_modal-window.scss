@@ -5,6 +5,16 @@
 }
 .Msg-window-default {
     border-radius: 5px;
+    @include laptop() {
+        width: 80vw !important;
+        height: 80vh !important;
+    }
+    @include tablet() {
+        max-width: 90vw !important;
+        max-height: 90vh !important;
+        width: 90vw !important;
+        height: 90vh !important;
+    }
 }
 .Msg-window-inner-x-default {
     transition: $transition-duration;
@@ -12,6 +22,9 @@
         background-color: transparent !important;
         opacity: 0.7;
     }
+}
+.Msg-content-default {
+    width: 100%;
 }
 .Msg-content-container-default {
     display: flex;

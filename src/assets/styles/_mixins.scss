@@ -1,35 +1,3 @@
-@mixin title() {
-    text-transform: uppercase;
-    font-family: $title-font;
-    font-size: 36px;
-    letter-spacing: 2.5px;
-    margin-bottom: 6px;
-    opacity: 0.9;
-}
-
-@mixin subtitle($font-size, $margin-bottom) {
-    font-family: $subtitle-font;
-    text-transform: uppercase;
-    font-size: $font-size;
-    letter-spacing: 1.1px;
-    opacity: 0.62;
-    margin-bottom: $margin-bottom;
-}
-
-@mixin gallery($cursor-pointer) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 1200px;
-    margin: 0 auto;
-    &__item {
-        margin: 7px;
-        @if $cursor-pointer {
-            cursor: pointer;
-        }
-    }
-}
-
 // screens
 @mixin mobile-tiny() {
     @media (max-width: $screen-mobile-tiny) {
@@ -58,5 +26,59 @@
 @mixin desktop() {
     @media (max-width: $screen-desktop) {
         @content;
+    }
+}
+
+// project mixins
+@mixin title() {
+    text-transform: uppercase;
+    font-family: $title-font;
+    font-size: 36px;
+    letter-spacing: 2.5px;
+    margin-bottom: 6px;
+    opacity: 0.9;
+    @include tablet() {
+        font-size: 30px;
+    }
+    @include mobile-tiny() {
+        font-size: 25px;
+    }
+}
+
+@mixin subtitle($font-size, $margin-bottom) {
+    font-family: $subtitle-font;
+    text-transform: uppercase;
+    font-size: $font-size;
+    letter-spacing: 1.1px;
+    opacity: 0.62;
+    margin: {
+        left: 5%;
+        right: 5%;
+        bottom: $margin-bottom;
+    }
+    @include tablet() {
+        font-size: $font-size - 3px;
+        margin-bottom: $margin-bottom - 50px;
+    }
+    @include mobile-tiny() {
+        font-size: $font-size - 6px;;
+    }
+}
+
+@mixin gallery($cursor-pointer) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1200px;
+    margin: 0 auto;
+    &__item {
+        margin: 7px;
+        &_img {
+            width: 100%;
+            height: 100%;
+            @if $cursor-pointer {
+                cursor: pointer;
+            }
+        }
     }
 }
