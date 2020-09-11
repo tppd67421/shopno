@@ -3,12 +3,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 109px;
+    padding-bottom: 80px;
     font-family: $title-font;
     &__menu {
         display: flex;
         align-self: flex-start;
-        padding: 64px 0;
+        padding: 20px 0;
         width: 1142px;
         margin: 0 auto;
         @include laptop-large() {
