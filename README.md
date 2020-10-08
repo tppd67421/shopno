@@ -1,25 +1,31 @@
-# Shopno
+# Shopno (landing page markup)
 
-https://tppd67421.github.io/shopno/
+Deployed version: [tppd67421.github.io/shopno](https://tppd67421.github.io/shopno/)
 
-- [x] сверстай PixelPerfect для ширины макета (исключение – не центрированные
-заголовки сделай центрированными)
-- [x] блок "избранные работы" – при клике на картинку открывается popup с большим
-изображением (можно на нативном js, можно с помощью сторонней библиотеки)
-- [x] элемент с информацией о человеке (блок «команда») – это hover-эффект
-элемента при наведении на элемент (после загрузки страницы этот элемент
-выглядит так же, как и остальные в этом блоке)
-- [x] блок "контакты" – названия полей в форме – плейсхолдеры полей ввода
-- [x] блок "контакты" – подключи API карт (Яндекс или Google)
-- [x] макет должен быть резиновый или адаптивный (отдельного макета для мобильной
-верстки не требуется, но страница должна выглядеть хорошо на всех разрешениях
-с шириной от 320px до 1600px)
-- [x] используй BEM
-- [x] у всех ссылок и кнопок должны быть hover-эффекты с transition
-- [x] верстка должна быть семантической (w3c validation – отсутствие ошибок и
-предупреждений при прохождении теста на сайте validator.w3.org)
-- [x] файлы и изображения – минимизированы и оптимизированы
-- [x] при выполнении приветствуется использование css-препроцессора (sass, less,
-scss, styl и др.) и сборщика проектов (gulp, webpack и др.)
-- [x] результат работы размести на GitHub и подключи GitPage
+## Technologies used
 
+- SCSS;
+- Webpack;
+- Msg (for modal window).
+
+## Project description
+
+This page was be created Pixel Perfect from PSD layout. All elements have interactive and css transition (buttons, links, etc). Page responsive for all screens.
+
+In block 'Featured works' modal window open after click to image.
+
+![Modal window animate](./doc/modal-window-animate.gif)
+
+In block 'Small team' all images have hover effect. After hover you can see additional information about persot.
+
+![Team animate](./doc/team-animate.gif)
+
+In last block with contact form and address information interactive map and all links have something type (simple link, tel, mailto).
+
+![Address block animate](./doc/address-block.gif)
+
+Markup completed with BEM metodology.
+
+Markup don't have errors or warnings in [validator.w3.org](https://validator.w3.org/).
+
+![Validator](./doc/validator.png)
